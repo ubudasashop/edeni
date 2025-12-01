@@ -1,0 +1,508 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="rw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eden Nursery School | Huye, Rwanda</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <a href="tel:0725023335"><i class="fas fa-phone"></i> +250 725 023 335</a>
+            <a href="mailto:edenprimaryschool@gmail.com"><i class="fas fa-envelope"></i> edenprimaryschool@gmail.com</a>
+            <span><i class="fas fa-map-marker-alt"></i> Huye, Rwanda</span>
+        </div>
+    </div>
+
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">🌳 Eden Nursery</a>
+            
+            <div class="nav-controls">
+                <button id="lang-toggle" onclick="toggleLanguage()" class="lang-btn">
+                    🇫🇷 Français
+                </button>
+
+                <div class="hamburger" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link" data-i18n="nav_home">Ahabanza</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="nav_about">Turi Bande</a></li>
+                <li><a href="#programs" class="nav-link" data-i18n="nav_programs">Porogaramu</a></li>
+                <li><a href="#gallery" class="nav-link" data-i18n="nav_gallery">Amafoto</a></li>
+                <li><a href="#admissions" class="nav-link" data-i18n="nav_admissions">Kwiyandikisha</a></li>
+                <li><a href="#contact" class="nav-link btn btn-green mobile-contact" data-i18n="nav_contact">Twandikire</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1 data-i18n="hero_title">Aho Imbuto Nto Zikurira 🇷🇼</h1>
+            <p data-i18n="hero_subtitle">Uburezi bufite ireme bushingiye ku bidukikije i Huye, mu Rwanda</p>
+            <a href="#admissions" class="btn btn-green" data-i18n="hero_btn">Andikisha Umwana Wawe</a>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <div class="container welcome-grid">
+            <img src="https://images.unsplash.com/photo-1489710437720-ebb67ec84dd2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Happy student" class="welcome-img">
+            
+            <div>
+                <h2 class="section-title" data-i18n="section_welcome">Murakaza neza muri Eden 🌱</h2>
+                <h3 data-i18n="welcome_sub">Ubusitani bw'Ibitangaza</h3>
+                <p class="mb-20" data-i18n="welcome_txt1">Muri Eden, twemera ko buri mwana ari nk'imbuto yihariye. Duherereye mu misozi myiza ya Huye, ikigo cyacu cyateguwe kugira ngo abana bakurire mu bidukikije byiza.</p>
+                <p class="mb-20" data-i18n="welcome_txt2">Dukoresha integanyanyigisho ivanze (blended curriculum) ihuza uburezi mpuzamahanga n'indangagaciro nyarwanda.</p>
+                <a href="#programs" class="btn btn-outline" data-i18n="welcome_btn">Menya Ibyo Dukora</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="programs" class="section-padding bg-white">
+        <div class="container">
+            <h2 class="section-title text-center" data-i18n="programs_title">Porogaramu Zacu 🌱</h2>
+            <div class="programs-grid">
+                <div class="program-card card-pink">
+                    <span class="program-icon">🍼</span>
+                    <h3 data-i18n="prog_infant">Infant Garden (Abato)</h3>
+                    <span class="program-age">3 - 18 Months/Amezi/Mois</span>
+                    <p data-i18n="prog_infant_desc">Ahantu heza, hatekanye hita ku mikurire y'umwana, imikino, no gutuza mu mutima.</p>
+                </div>
+                <div class="program-card card-beige">
+                    <span class="program-icon">🧸</span>
+                    <h3 data-i18n="prog_toddler">Toddler Blooms</h3>
+                    <span class="program-age">18 - 36 Months/Amezi/Mois</span>
+                    <p data-i18n="prog_toddler_desc">Dutoza abana kwigenga binyuze mu kuvumbura, kwiga kuvuga, no kubana n'abandi.</p>
+                </div>
+                <div class="program-card card-blue">
+                    <span class="program-icon">🎨</span>
+                    <h3 data-i18n="prog_preschool">Preschool (Incuke)</h3>
+                    <span class="program-age">3 - 5 Years/Imyaka/Ans</span>
+                    <p data-i18n="prog_preschool_desc">Gutegura umwana kujya mu mashuri abanza hibandwa ku gusoma, kubara, no gukorera hamwe.</p>
+                </div>
+            </div>
+
+            <div class="calculator-box">
+                <h3 data-i18n="calc_title">Ni iyihe Porogaramu Ibereye Umwana Wawe?</h3>
+                <div class="calc-input-group">
+                    <label data-i18n="calc_label">Itariki y'Amavuko:</label>
+                    <input type="date" id="birthDate">
+                    <button class="btn btn-green" onclick="calculateProgram()" data-i18n="calc_btn">Reba Icyiciro Cye</button>
+                </div>
+                <div id="calcResult" class="calc-result"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section-padding">
+        <div class="container">
+            <h2 class="section-title text-center" data-i18n="nav_gallery">Amafoto 🌱</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&w=600&q=80" alt="Kids 1"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1544256223-95290b0e5e34?ixlib=rb-4.0.3&w=600&q=80" alt="Kids 2"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1472162072942-cd5147eb3902?ixlib=rb-4.0.3&w=600&q=80" alt="Kids 3"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?ixlib=rb-4.0.3&w=600&q=80" alt="Kids 4"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?ixlib=rb-4.0.3&w=600&q=80" alt="Kids 5"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1529390003868-6c040332c216?ixlib=rb-4.0.3&w=600&q=80" alt="Kids 6"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding testimonial-section">
+        <div class="container">
+            <h2 class="section-title text-center" data-i18n="parents_title">Icyo Ababyeyi Bavuga 🌱</h2>
+            <div class="testimonial-card text-center">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p class="testimonial-text">"Eden Nursery yahinduye umwana wanjye. Buri munsi ataha yishimye, afite amatsiko yo kumbwira ibyo yabonye cyangwa indirimbo nshya yize."</p>
+                <span class="parent-name">- Marie Uwase, Parent</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="admissions" class="section-padding">
+        <div class="container text-center">
+            <h2 class="section-title" data-i18n="admissions_title">Kwiyandikisha 🌱</h2>
+            <p class="mb-30" data-i18n="admissions_sub">Injira mu muryango wacu mu ntambwe 5 zoroshye</p>
+            
+            <div class="admissions-box text-left">
+                <ol class="steps-list">
+                    <li data-i18n="step_1">Twandikire umenye niba hari imyanya.</li>
+                    <li data-i18n="step_2">Sura ikigo cyacu urebere niba umwana wawe azahisanzura.</li>
+                    <li data-i18n="step_3">Ohereza fomu yo kwiyandikisha.</li>
+                    <li data-i18n="step_4">Ishyura amafaranga yo kwiyandikisha.</li>
+                    <li data-i18n="step_5">Murakaza neza! Fata impuzankano (Uniform) utangire.</li>
+                </ol>
+            </div>
+
+            <div class="cta-group">
+                <a href="#contact" class="btn btn-green" data-i18n="btn_tour">Sura Ikigo</a>
+                <a href="https://wa.me/250725023335" class="btn btn-outline"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding bg-white">
+        <div class="container">
+            <h2 class="section-title text-center" data-i18n="contact_title">Twandikire 🌱</h2>
+            <div class="contact-grid">
+                <div>
+                    <form class="contact-form" onsubmit="submitForm(event)">
+                        <input type="text" data-i18n="form_name" placeholder="Izina ry'Umubyeyi" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="tel" placeholder="Phone / Telefoni" required>
+                        <textarea rows="5" data-i18n="form_msg" placeholder="Ubutumwa bwawe" required></textarea>
+                        <button type="submit" class="btn btn-green" data-i18n="form_btn">Ohereza</button>
+                    </form>
+                </div>
+
+                <div class="contact-info-box">
+                    <h3 data-i18n="contact_visit">Duherereye</h3>
+                    <div class="contact-detail">
+                        <i class="fas fa-map-pin"></i>
+                        <p>Cyarwa, Tumba, Huye, Southern Province</p>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-phone"></i>
+                        <p>+250 725 023 335</p>
+                    </div>
+                    <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.9934668270564!2d29.73977597405234!3d-2.5855269385016094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19c30c330f87132f%3A0xc3222e40049405d4!2sHuye!5e0!3m2!1sen!2srw!4v1701350000000!5m2!1sen!2srw" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3>🌳 Eden Nursery</h3>
+                    <p class="mb-20">Huye, Rwanda</p>
+                </div>
+                <div>
+                    <p>© 2025 Eden Nursery School. <br>Designed with 💚 in Rwanda</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/250725023335" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<style>/* --- VARIABLES --- */
+:root {
+    --sage-green: #8B9D83;
+    --sage-dark: #6A7A64;
+    --warm-beige: #E8DCC4;
+    --cream-white: #FAF7F0;
+    --blush-pink: #F4DED5;
+    --sky-blue: #A8DADC;
+    --text-dark: #2C3E50;
+    --radius: 16px;
+    --transition: all 0.3s ease;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Merriweather', serif;
+    background-color: var(--cream-white);
+    color: var(--text-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, .btn, .nav-link { font-family: 'Nunito', sans-serif; }
+
+/* --- UTILITIES --- */
+.container { width: 90%; max-width: 1200px; margin: 0 auto; padding: 0 15px; }
+.section-padding { padding: 80px 0; }
+.text-center { text-align: center; }
+.bg-white { background: white; }
+.mb-20 { margin-bottom: 20px; }
+.mb-30 { margin-bottom: 30px; }
+
+.section-title {
+    font-size: 2.5rem;
+    color: var(--sage-dark);
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+    border: none;
+    font-size: 1rem;
+}
+
+.btn-green { background-color: var(--sage-green); color: white; }
+.btn-green:hover { background-color: var(--sage-dark); transform: translateY(-3px); }
+.btn-outline { border: 2px solid var(--sage-green); color: var(--sage-green); background: transparent; }
+.btn-outline:hover { background-color: var(--sage-green); color: white; }
+
+/* --- HEADER & NAV --- */
+.top-bar { background-color: var(--sage-green); color: white; padding: 8px 0; font-size: 0.9rem; text-align: center; }
+.top-bar a { color: white; text-decoration: none; margin: 0 10px; }
+
+nav {
+    background: rgba(250, 247, 240, 0.95);
+    backdrop-filter: blur(10px);
+    position: sticky; top: 0; z-index: 1000;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.nav-container { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 1.5rem; font-weight: 800; color: var(--sage-dark); text-decoration: none; }
+.nav-links { list-style: none; display: flex; gap: 20px; align-items: center; }
+.nav-link { text-decoration: none; color: var(--text-dark); font-weight: 600; }
+
+.nav-controls { display: flex; gap: 15px; align-items: center; }
+.lang-btn {
+    padding: 5px 15px;
+    border: 1px solid var(--sage-green);
+    border-radius: 20px;
+    background: white;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--sage-dark);
+}
+
+.hamburger { display: none; font-size: 1.5rem; cursor: pointer; color: var(--sage-dark); }
+
+/* --- HERO --- */
+.hero {
+    height: 90vh;
+    /* 📸 CHANGE HERO BACKGROUND IMAGE BELOW */
+    background: linear-gradient(rgba(44, 62, 80, 0.4), rgba(44, 62, 80, 0.4)), url('https://images.unsplash.com/photo-1496309732348-3627f3f040ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex; align-items: center; justify-content: center;
+    text-align: center; color: white;
+}
+
+.hero-content h1 { font-size: 3.5rem; margin-bottom: 20px; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+
+/* --- SECTIONS --- */
+.welcome-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+.welcome-img { width: 100%; height: 400px; object-fit: cover; border-radius: var(--radius); }
+
+.programs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 50px; }
+.program-card { padding: 40px 30px; border-radius: var(--radius); text-align: center; position: relative; }
+.card-pink { background: var(--blush-pink); }
+.card-beige { background: var(--warm-beige); }
+.card-blue { background: var(--sky-blue); }
+.program-icon { font-size: 3rem; display: block; margin-bottom: 15px; }
+
+/* Calculator */
+.calculator-box { background: var(--sky-blue); padding: 40px; border-radius: var(--radius); max-width: 600px; margin: 0 auto; text-align: center; }
+.calc-input-group { margin: 20px 0; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.calc-input-group input { padding: 12px; border-radius: 8px; border: none; }
+.calc-result { margin-top: 20px; padding: 15px; background: rgba(255,255,255,0.9); border-radius: 8px; display: none; font-weight: bold; }
+
+/* Gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+.gallery-item { height: 250px; border-radius: var(--radius); overflow: hidden; }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+.gallery-item:hover img { transform: scale(1.1); }
+
+/* Admissions & Contact */
+.admissions-box { background: white; padding: 40px; border-radius: var(--radius); max-width: 800px; margin: 0 auto 40px; }
+.steps-list li { margin-bottom: 15px; padding-left: 20px; }
+
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+.contact-form { display: flex; flex-direction: column; gap: 15px; }
+.contact-form input, .contact-form textarea { padding: 15px; border: 1px solid #ddd; border-radius: 8px; font-family: 'Nunito', sans-serif; }
+.map-frame { width: 100%; height: 300px; border: none; border-radius: var(--radius); }
+
+/* Footer & Float */
+footer { background: var(--sage-green); color: white; padding: 50px 0; text-align: center; }
+.footer-grid { display: flex; justify-content: space-between; max-width: 600px; margin: 0 auto; }
+.whatsapp-float { position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: #25D366; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; text-decoration: none; z-index: 100; }
+
+/* --- MOBILE RESPONSIVE --- */
+@media (max-width: 768px) {
+    .nav-links { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; width: 100%; background: white; padding: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+    .nav-links.active { display: flex; }
+    .hamburger { display: block; }
+    .hero-content h1 { font-size: 2.5rem; }
+    .welcome-grid, .contact-grid, .gallery-grid { grid-template-columns: 1fr; }
+    .mobile-contact { width: 100%; text-align: center; }
+}
+</style><script>// --- CONFIGURATION ---
+let currentLang = 'rw'; // Default Language
+
+const translations = {
+    rw: {
+        nav_home: "Ahabanza",
+        nav_about: "Turi Bande",
+        nav_programs: "Porogaramu",
+        nav_gallery: "Amafoto",
+        nav_admissions: "Kwiyandikisha",
+        nav_contact: "Twandikire",
+        hero_title: "Aho Imbuto Nto Zikurira 🇷🇼",
+        hero_subtitle: "Uburezi bufite ireme bushingiye ku bidukikije i Huye, mu Rwanda",
+        hero_btn: "Andikisha Umwana Wawe",
+        section_welcome: "Murakaza neza muri Eden 🌱",
+        welcome_sub: "Ubusitani bw'Ibitangaza",
+        welcome_txt1: "Muri Eden, twemera ko buri mwana ari nk'imbuto yihariye. Duherereye mu misozi myiza ya Huye, ikigo cyacu cyateguwe kugira ngo abana bakurire mu bidukikije byiza.",
+        welcome_txt2: "Dukoresha integanyanyigisho ivanze (blended curriculum) ihuza uburezi mpuzamahanga n'indangagaciro nyarwanda.",
+        welcome_btn: "Menya Ibyo Dukora",
+        programs_title: "Porogaramu Zacu 🌱",
+        prog_infant: "Infant Garden (Abato)",
+        prog_infant_desc: "Ahantu heza, hatekanye hita ku mikurire y'umwana, imikino, no gutuza mu mutima.",
+        prog_toddler: "Toddler Blooms",
+        prog_toddler_desc: "Dutoza abana kwigenga binyuze mu kuvumbura, kwiga kuvuga, no kubana n'abandi.",
+        prog_preschool: "Preschool (Incuke)",
+        prog_preschool_desc: "Gutegura umwana kujya mu mashuri abanza hibandwa ku gusoma, kubara, no gukorera hamwe.",
+        calc_title: "Ni iyihe Porogaramu Ibereye Umwana Wawe?",
+        calc_label: "Itariki y'Amavuko:",
+        calc_btn: "Reba Icyiciro Cye",
+        parents_title: "Icyo Ababyeyi Bavuga 🌱",
+        admissions_title: "Kwiyandikisha 🌱",
+        admissions_sub: "Injira mu muryango wacu mu ntambwe 5 zoroshye",
+        step_1: "Twandikire umenye niba hari imyanya.",
+        step_2: "Sura ikigo cyacu urebere niba umwana wawe azahisanzura.",
+        step_3: "Ohereza fomu yo kwiyandikisha.",
+        step_4: "Ishyura amafaranga yo kwiyandikisha.",
+        step_5: "Murakaza neza! Fata impuzankano (Uniform) utangire.",
+        btn_tour: "Sura Ikigo",
+        contact_title: "Twandikire 🌱",
+        contact_visit: "Duherereye",
+        form_name: "Izina ry'Umubyeyi",
+        form_msg: "Ubutumwa bwawe",
+        form_btn: "Ohereza"
+    },
+    fr: {
+        nav_home: "Accueil",
+        nav_about: "À propos",
+        nav_programs: "Programmes",
+        nav_gallery: "Galerie",
+        nav_admissions: "Admissions",
+        nav_contact: "Contact",
+        hero_title: "Là où les Petites Graines Grandissent 🇷🇼",
+        hero_subtitle: "Éducation de qualité inspirée par la nature à Huye, Rwanda",
+        hero_btn: "Inscrivez votre enfant",
+        section_welcome: "Bienvenue à Eden Nursery 🌱",
+        welcome_sub: "Un Jardin de Merveilles",
+        welcome_txt1: "Chez Eden, chaque enfant est une graine unique. Situé dans les collines sereines de Huye, notre campus connecte les enfants avec la nature.",
+        welcome_txt2: "Nous suivons un programme mixte intégrant les meilleures pratiques internationales et les valeurs culturelles rwandaises.",
+        welcome_btn: "Découvrez notre approche",
+        programs_title: "Nos Programmes 🌱",
+        prog_infant: "Jardin des Nourrissons",
+        prog_infant_desc: "Un environnement doux axé sur le jeu sensoriel et la sécurité émotionnelle.",
+        prog_toddler: "L'Éclosion des Tout-petits",
+        prog_toddler_desc: "Encourager l'indépendance par l'exploration et l'interaction sociale.",
+        prog_preschool: "Jardin Préscolaire",
+        prog_preschool_desc: "Préparation à l'école primaire avec accent sur l'alphabétisation et le calcul.",
+        calc_title: "Quel programme pour votre enfant ?",
+        calc_label: "Date de naissance :",
+        calc_btn: "Trouver sa classe",
+        parents_title: "Ce que disent les parents 🌱",
+        admissions_title: "Admissions 🌱",
+        admissions_sub: "Rejoignez notre famille en 5 étapes faciles",
+        step_1: "Contactez-nous pour vérifier la disponibilité.",
+        step_2: "Planifiez une visite du campus.",
+        step_3: "Remplissez le formulaire d'inscription.",
+        step_4: "Payez les frais d'inscription.",
+        step_5: "Bienvenue ! Recevez votre uniforme et commencez.",
+        btn_tour: "Visitez-nous",
+        contact_title: "Contactez-nous 🌱",
+        contact_visit: "Visitez-nous",
+        form_name: "Nom du parent",
+        form_msg: "Votre message",
+        form_btn: "Envoyer"
+    }
+};
+
+// Toggle Function
+function toggleLanguage() {
+    currentLang = (currentLang === 'rw') ? 'fr' : 'rw';
+    
+    // Update Button Text
+    const btn = document.getElementById('lang-toggle');
+    btn.innerHTML = (currentLang === 'rw') ? "🇫🇷 Français" : "🇷🇼 Kinyarwanda";
+
+    // Update Content
+    const elements = document.querySelectorAll('[data-i18n]');
+    elements.forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[currentLang][key]) {
+            if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                el.placeholder = translations[currentLang][key];
+            } else {
+                el.innerText = translations[currentLang][key];
+            }
+        }
+    });
+}
+
+// Age Calculator
+function calculateProgram() {
+    const birthDateInput = document.getElementById('birthDate').value;
+    const resultDiv = document.getElementById('calcResult');
+    
+    if (!birthDateInput) {
+        resultDiv.style.display = 'block';
+        resultDiv.innerText = (currentLang === 'rw') ? "Hitamo itariki." : "Sélectionnez une date.";
+        return;
+    }
+
+    const birthDate = new Date(birthDateInput);
+    const today = new Date();
+    let months = (today.getFullYear() - birthDate.getFullYear()) * 12;
+    months -= birthDate.getMonth();
+    months += today.getMonth();
+
+    resultDiv.style.display = 'block';
+    
+    // Result Logic
+    if (months < 3) {
+        resultDiv.innerHTML = (currentLang === 'rw') 
+            ? `Amezi: ${months}. <br> Dufata abana guhera ku mezi 3.` 
+            : `Mois : ${months}. <br> Nos programmes commencent à 3 mois.`;
+    } else if (months >= 3 && months < 18) {
+        resultDiv.innerHTML = (currentLang === 'rw') 
+            ? `Amezi: ${months}. <br> <strong>Icyiciro: Infant Garden 🍼</strong>`
+            : `Mois : ${months}. <br> <strong>Recommandé : Jardin des Nourrissons 🍼</strong>`;
+    } else if (months >= 18 && months < 36) {
+        resultDiv.innerHTML = (currentLang === 'rw') 
+            ? `Amezi: ${months}. <br> <strong>Icyiciro: Toddler Blooms 🧸</strong>`
+            : `Mois : ${months}. <br> <strong>Recommandé : Tout-petits 🧸</strong>`;
+    } else {
+        resultDiv.innerHTML = (currentLang === 'rw') 
+            ? `Imyaka: ${Math.floor(months/12)}. <br> <strong>Icyiciro: Preschool 🎨</strong>`
+            : `Ans : ${Math.floor(months/12)}. <br> <strong>Recommandé : Préscolaire 🎨</strong>`;
+    }
+}
+
+// Menu Mobile
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+}
+
+// Form Submit
+function submitForm(e) {
+    e.preventDefault();
+    alert((currentLang === 'rw') ? "Murakoze! Tuzabavugisha." : "Merci ! Nous vous contacterons.");
+}
+</script>
